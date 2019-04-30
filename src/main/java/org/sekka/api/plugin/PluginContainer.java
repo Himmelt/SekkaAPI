@@ -1,6 +1,5 @@
 package org.sekka.api.plugin;
 
-import net.minecraftforge.fml.common.ModContainer;
 import org.sekka.api.assets.Asset;
 
 import java.nio.file.Path;
@@ -9,11 +8,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
-public interface PluginContainer extends ModContainer {
+public interface PluginContainer {
 
-    default String getId() {
-        return getModId();
-    }
+    String getId();
 
     default String getName() {
         return getId();
