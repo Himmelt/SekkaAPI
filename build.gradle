@@ -114,13 +114,13 @@ bintray {
     override = true
     pkg {
         repo = 'Minecraft'
-        name = 'Sekka'
+        name = 'SekkaAPI'
         licenses = ['MIT']
         vcsUrl = 'https://github.com/Himmelt/SekkaAPI.git'
         publicDownloadNumbers = true
         version {
             name = project.version
-            desc = 'SekkaAPI Library.'
+            desc = 'Sekka Plugin Library API.'
             released = new Date()
         }
     }
