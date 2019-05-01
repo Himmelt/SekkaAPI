@@ -17,11 +17,15 @@ public @interface Plugin {
 
     String version() default "";
 
-    Dependency[] dependencies() default {};
+    //Dependency[] dependencies() default {};
 
     String description() default "";
 
     String url() default "";
 
     String[] authors() default {};
+
+    String dependencies() default "";
+
+    boolean useMetadata() default false;
 }
