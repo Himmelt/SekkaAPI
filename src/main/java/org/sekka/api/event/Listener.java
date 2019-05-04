@@ -9,7 +9,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Retention(RUNTIME)
 @Target(METHOD)
 public @interface Listener {
-    Order order() default Order.DEFAULT;
+    EventPriority priority() default EventPriority.DEFAULT;
 
     /**
      * @return 是否忽略已被取消的事件，默认忽略，即不会触发本监听器.

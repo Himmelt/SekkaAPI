@@ -1,6 +1,7 @@
 package org.sekka.api;
 
 import org.jetbrains.annotations.Nullable;
+import org.sekka.api.event.EventManager;
 import org.sekka.api.server.Server;
 import org.sekka.api.world.World;
 
@@ -9,6 +10,7 @@ import java.util.UUID;
 public final class Sekka {
 
     private static Server server;
+    private static EventManager eventManager;
 
     public static final String MOD_ID = "sekka";
     public static final String MOD_NAME = "Sekka";
@@ -19,6 +21,10 @@ public final class Sekka {
 
     public static Server getServer() {
         return server;
+    }
+
+    public static EventManager getEventManager() {
+        return eventManager;
     }
 
     public static World getWorld(@Nullable UUID uuid) {
