@@ -1,4 +1,6 @@
 package org.sekka.api.event.block;
 
-public interface BlockEvent {
+import org.sekka.api.event.Event;
+
+public interface BlockEvent extends Event {
 }

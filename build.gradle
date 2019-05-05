@@ -53,12 +53,12 @@ repositories {
 
 dependencies {
     compile 'org.soraworld:hocon:1.2.1-SNAPSHOT'
-/*    compileOnly('org.spongepowered:spongeapi:7.1.0-SNAPSHOT') {
+    compileOnly('org.spongepowered:spongeapi:7.1.0-SNAPSHOT') {
         transitive = false
     }
     compileOnly('org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT') {
         transitive = false
-    }*/
+    }
 }
 
 tasks.withType(JavaCompile) {
